@@ -23,6 +23,12 @@ export default {
 				sans: ['Golos Text', 'sans-serif'],
 			},
 			colors: {
+				brand: {
+					red: '#CC1F2D',
+					yellow: '#F5C842',
+					gray: '#4A4A4A',
+					lightgray: '#F2F2F2',
+				},
 				gold: '#C9A24B',
 				graphite: '#1A1816',
 				border: 'hsl(var(--border))',
