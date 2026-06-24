@@ -52,7 +52,8 @@ const Index = () => {
               <img
                 src={LOGO_IMAGE}
                 alt="Логотип Комплекс-бар"
-                className="h-14 w-14 sm:h-16 sm:w-16 object-contain rounded-full"
+                className="object-contain rounded-full"
+                style={{ width: '189px', height: '189px' }}
               />
             </div>
           </div>
