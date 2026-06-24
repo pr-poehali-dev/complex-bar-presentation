@@ -129,8 +129,8 @@ const Index = () => {
               <a href="mailto:volgoglass@mail.ru" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity">
                 <Icon name="Mail" size={16} /> volgoglass@mail.ru
               </a>
-              <a href="https://kompleks-bar.ru" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity">
-                <Icon name="Globe" size={16} /> kompleks-bar.ru
+              <a href="https://complexbar.ru" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity">
+                <Icon name="Globe" size={16} /> complexbar.ru
               </a>
             </div>
           </div>
