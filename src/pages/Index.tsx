@@ -123,11 +123,11 @@ const Index = () => {
               </p>
             </div>
             <div className="space-y-1.5 text-sm sm:text-base font-medium">
-              <a href="tel:+70000000000" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity">
-                <Icon name="Phone" size={16} /> +7 (XXX) XXX-XX-XX
+              <a href="tel:+79061715498" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity">
+                <Icon name="Phone" size={16} /> +7 (906) 171-54-98
               </a>
-              <a href="mailto:info@kompleks-bar.ru" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity">
-                <Icon name="Mail" size={16} /> info@kompleks-bar.ru
+              <a href="mailto:volgoglass@mail.ru" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity">
+                <Icon name="Mail" size={16} /> volgoglass@mail.ru
               </a>
               <a href="https://kompleks-bar.ru" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity">
                 <Icon name="Globe" size={16} /> kompleks-bar.ru
