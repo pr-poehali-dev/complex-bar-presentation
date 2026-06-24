@@ -85,11 +85,7 @@ const Index = () => {
               alt="Премиальный рельефный сервиз"
               className="relative w-full h-full object-cover aspect-[3/4]"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-brand-red px-3 py-2">
-              <span className="text-[10px] sm:text-xs tracking-widest uppercase text-white font-semibold">
-                Премиальная подача
-              </span>
-            </div>
+
           </div>
 
           {/* benefits */}
