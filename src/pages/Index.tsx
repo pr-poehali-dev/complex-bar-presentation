@@ -143,7 +143,7 @@ const Index = () => {
 
         {/* ===== FOOTER ===== */}
         <footer className="relative bg-white px-8 sm:px-12 py-2.5 text-center border-t border-brand-red/10">
-          <p className="text-[9px] sm:text-[10px] text-brand-gray/40 leading-snug">
+          <p className="text-xs sm:text-sm text-brand-gray/60 leading-snug">
             *Список стаканов для подарка запрашивайте у менеджера. Количество подарков ограничено.
           </p>
         </footer>
