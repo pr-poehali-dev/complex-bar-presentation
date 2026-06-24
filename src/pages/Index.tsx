@@ -3,6 +3,9 @@ import Icon from '@/components/ui/icon';
 const DISH_IMAGE =
   'https://cdn.poehali.dev/projects/cff7e38b-d3d7-405f-8dee-c5199949622d/files/b92c68bf-ee5e-4065-b725-0e1fa2f06b46.jpg';
 
+const LOGO_IMAGE =
+  'https://cdn.poehali.dev/projects/cff7e38b-d3d7-405f-8dee-c5199949622d/bucket/187e8c8a-5e8a-45b9-8539-3ed94d3a7dd8.png';
+
 const benefits = [
   {
     icon: 'Handshake',
@@ -42,11 +45,20 @@ const Index = () => {
 
         {/* ===== HEADER ===== */}
         <header className="relative px-8 sm:px-12 pt-10 sm:pt-12">
-          <div className="flex items-center gap-3 mb-6 animate-fade-in">
-            <div className="h-px w-10 bg-gold" />
-            <span className="text-gold tracking-[0.35em] text-[10px] sm:text-xs uppercase font-semibold">
-              Комплекс-бар · Волгоград
-            </span>
+          <div className="flex items-center justify-between gap-4 mb-6 animate-fade-in">
+            <div className="flex items-center gap-3">
+              <div className="h-px w-10 bg-gold" />
+              <span className="text-gold tracking-[0.35em] text-[10px] sm:text-xs uppercase font-semibold">
+                Волгоград
+              </span>
+            </div>
+            <div className="shrink-0 rounded-full bg-white p-1 shadow-lg ring-1 ring-gold/40">
+              <img
+                src={LOGO_IMAGE}
+                alt="Логотип Комплекс-бар"
+                className="h-14 w-14 sm:h-16 sm:w-16 object-contain rounded-full"
+              />
+            </div>
           </div>
 
           <p className="text-gold font-display italic text-2xl sm:text-3xl mb-1">Акция</p>
