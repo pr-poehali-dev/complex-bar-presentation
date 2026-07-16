@@ -1,7 +1,7 @@
 import Icon from '@/components/ui/icon';
 
 const DISH_IMAGE =
-  'https://cdn.poehali.dev/projects/cff7e38b-d3d7-405f-8dee-c5199949622d/files/b92c68bf-ee5e-4065-b725-0e1fa2f06b46.jpg';
+  'https://cdn.poehali.dev/projects/cff7e38b-d3d7-405f-8dee-c5199949622d/bucket/7487fc60-d50b-4d1d-9934-212b5318d4cc.png';
 
 const LOGO_IMAGE =
   'https://cdn.poehali.dev/projects/cff7e38b-d3d7-405f-8dee-c5199949622d/bucket/187e8c8a-5e8a-45b9-8539-3ed94d3a7dd8.png';
