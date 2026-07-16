@@ -115,25 +115,25 @@ const Index = () => {
         </main>
 
         {/* ===== CTA: red bg ===== */}
-        <section className="relative bg-brand-red text-white px-8 sm:px-12 py-5 sm:py-6">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <section className="relative bg-brand-red text-white px-8 sm:px-12 py-3 sm:py-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div>
-              <p className="font-display text-2xl sm:text-3xl font-bold leading-tight">
+              <p className="font-display text-lg sm:text-xl font-bold leading-tight">
                 Свяжитесь с менеджером
               </p>
-              <p className="text-white/70 text-xs sm:text-sm">
+              <p className="text-white/70 text-[10px] sm:text-xs">
                 для подбора комплекта под ваше заведение
               </p>
             </div>
-            <div className="space-y-1.5 text-sm sm:text-base font-medium">
-              <a href="tel:+79061715498" className="flex items-center gap-2.5 hover:text-brand-yellow transition-colors">
-                <Icon name="Phone" size={15} /> +7 (906) 171-54-98
+            <div className="space-y-0.5 text-xs sm:text-sm font-medium">
+              <a href="tel:+79061715498" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
+                <Icon name="Phone" size={12} /> +7 (906) 171-54-98
               </a>
-              <a href="mailto:volgoglass@mail.ru" className="flex items-center gap-2.5 hover:text-brand-yellow transition-colors">
-                <Icon name="Mail" size={15} /> volgoglass@mail.ru
+              <a href="mailto:volgoglass@mail.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
+                <Icon name="Mail" size={12} /> volgoglass@mail.ru
               </a>
-              <a href="https://complexbar.ru" className="flex items-center gap-2.5 hover:text-brand-yellow transition-colors">
-                <Icon name="Globe" size={15} /> complexbar.ru
+              <a href="https://complexbar.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
+                <Icon name="Globe" size={12} /> complexbar.ru
               </a>
             </div>
           </div>
