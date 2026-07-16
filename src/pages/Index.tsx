@@ -33,7 +33,10 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full bg-neutral-300 flex items-center justify-center p-4 sm:p-8 font-sans">
       {/* A4 slide */}
-      <div className="relative w-full max-w-[794px] aspect-[210/297] bg-white text-brand-gray overflow-hidden shadow-2xl flex flex-col">
+      <div
+        className="relative w-full max-w-[794px] aspect-[210/297] bg-white text-brand-gray overflow-hidden shadow-2xl flex flex-col"
+        style={{ padding: '0.5cm' }}
+      >
 
         {/* top red stripe */}
         <div className="h-2 w-full bg-brand-red shrink-0" />
@@ -53,7 +56,7 @@ const Index = () => {
                 src={LOGO_IMAGE}
                 alt="Логотип Комплекс-бар"
                 className="object-contain rounded-full"
-                style={{ width: '189px', height: '189px' }}
+                style={{ width: '160px', height: '160px' }}
               />
             </div>
           </div>
