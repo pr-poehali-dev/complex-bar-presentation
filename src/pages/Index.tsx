@@ -42,29 +42,29 @@ const Index = () => {
         <div className="h-2 w-full bg-brand-red shrink-0" />
 
         {/* ===== HEADER: white bg ===== */}
-        <header className="relative bg-white px-8 sm:px-12 pt-7 sm:pt-8 pb-6 sm:pb-7">
+        <header className="relative bg-white px-8 sm:px-12 pt-5 sm:pt-6 pb-4 sm:pb-5">
           {/* logo + city */}
-          <div className="flex items-center justify-end gap-4 mb-5 animate-fade-in">
+          <div className="flex items-center justify-end gap-4 mb-3 animate-fade-in">
             <div className="shrink-0 rounded-full bg-white shadow-md ring-2 ring-brand-red/20 p-0.5">
               <img
                 src={LOGO_IMAGE}
                 alt="Логотип Комплекс-бар"
                 className="object-contain rounded-full"
-                style={{ width: '160px', height: '160px' }}
+                style={{ width: '120px', height: '120px' }}
               />
             </div>
           </div>
 
           {/* yellow accent badge */}
-          <div className="inline-flex items-center gap-2 bg-brand-yellow px-3 py-1 mb-3">
+          <div className="inline-flex items-center gap-2 bg-brand-yellow px-3 py-1 mb-2">
             <Icon name="Tag" size={13} className="text-brand-gray" />
             <span className="text-brand-gray text-[10px] sm:text-xs font-bold uppercase tracking-widest">Акция</span>
           </div>
 
-          <h1 className="font-display font-bold leading-[1.15] text-lg sm:text-2xl tracking-tight text-brand-gray">
+          <h1 className="font-display font-bold leading-[1.15] text-base sm:text-xl tracking-tight text-brand-gray">
             Уникальное предложение. Наша компания предлагает <span className="text-brand-red">акцию на покупку
             высококачественного фарфора, столовых приборов и кухонного инвентаря</span>
-            <span className="align-super text-brand-red text-sm sm:text-base">*</span>
+            <span className="align-super text-brand-red text-xs sm:text-sm">*</span>
           </h1>
         </header>
 
@@ -72,7 +72,7 @@ const Index = () => {
         <div className="h-px bg-brand-red/20 mx-8 sm:mx-12" />
 
         {/* ===== BODY: 2 columns ===== */}
-        <main className="relative flex-1 bg-brand-lightgray px-8 sm:px-12 py-6 sm:py-8 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 items-center">
+        <main className="relative flex-1 bg-brand-lightgray px-8 sm:px-12 py-4 sm:py-5 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 items-center overflow-hidden">
           {/* visual */}
           <div className="relative animate-scale-in">
             <div className="absolute -inset-2 border-2 border-brand-red/15" />
@@ -85,21 +85,21 @@ const Index = () => {
           </div>
 
           {/* benefits */}
-          <ul className="flex flex-col gap-4 sm:gap-5">
+          <ul className="flex flex-col gap-3 sm:gap-4">
             {benefits.map((b, i) => (
               <li
                 key={b.title}
                 className="flex gap-3 sm:gap-4 animate-fade-in"
                 style={{ animationDelay: `${0.1 + i * 0.12}s`, animationFillMode: 'both' }}
               >
-                <div className="shrink-0 mt-0.5 h-9 w-9 flex items-center justify-center bg-brand-red text-white">
-                  <Icon name={b.icon} size={17} />
+                <div className="shrink-0 mt-0.5 h-8 w-8 flex items-center justify-center bg-brand-red text-white">
+                  <Icon name={b.icon} size={15} />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg sm:text-2xl font-semibold leading-tight text-brand-gray">
+                  <h3 className="font-display text-base sm:text-lg font-semibold leading-tight text-brand-gray">
                     {b.title}
                   </h3>
-                  <p className="text-brand-gray/60 text-xs sm:text-sm leading-snug mt-0.5">
+                  <p className="text-brand-gray/60 text-[11px] sm:text-xs leading-snug mt-0.5">
                     {b.text}
                   </p>
                 </div>
