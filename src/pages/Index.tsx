@@ -42,29 +42,29 @@ const Index = () => {
         <div className="h-2 w-full bg-brand-red shrink-0" />
 
         {/* ===== HEADER: white bg ===== */}
-        <header className="relative bg-white px-8 sm:px-12 pt-5 sm:pt-6 pb-4 sm:pb-5">
+        <header className="relative bg-white px-8 sm:px-12 pt-4 sm:pt-5 pb-3 sm:pb-4">
           {/* logo + city */}
-          <div className="flex items-center justify-end gap-4 mb-3 animate-fade-in">
+          <div className="flex items-center justify-end gap-4 mb-2 animate-fade-in">
             <div className="shrink-0 rounded-full bg-white shadow-md ring-2 ring-brand-red/20 p-0.5">
               <img
                 src={LOGO_IMAGE}
                 alt="Логотип Комплекс-бар"
                 className="object-contain rounded-full"
-                style={{ width: '120px', height: '120px' }}
+                style={{ width: '100px', height: '100px' }}
               />
             </div>
           </div>
 
           {/* yellow accent badge */}
           <div className="inline-flex items-center gap-2 bg-brand-yellow px-3 py-1 mb-2">
-            <Icon name="Tag" size={13} className="text-brand-gray" />
-            <span className="text-brand-gray text-[10px] sm:text-xs font-bold uppercase tracking-widest">Акция</span>
+            <Icon name="Tag" size={14} className="text-brand-gray" />
+            <span className="text-brand-gray text-xs font-bold uppercase tracking-widest">Акция</span>
           </div>
 
-          <h1 className="font-display font-bold leading-[1.15] text-base sm:text-xl tracking-tight text-brand-gray">
+          <h1 className="font-display font-extrabold leading-[1.15] text-xl sm:text-2xl tracking-tight text-brand-gray">
             Уникальное предложение. Наша компания предлагает <span className="text-brand-red">акцию на покупку
             высококачественного фарфора, столовых приборов и кухонного инвентаря</span>
-            <span className="align-super text-brand-red text-xs sm:text-sm">*</span>
+            <span className="align-super text-brand-red text-sm">*</span>
           </h1>
         </header>
 
@@ -72,7 +72,7 @@ const Index = () => {
         <div className="h-px bg-brand-red/20 mx-8 sm:mx-12" />
 
         {/* ===== BODY: 2 columns ===== */}
-        <main className="relative flex-1 bg-brand-lightgray px-8 sm:px-12 py-4 sm:py-5 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 items-center overflow-hidden">
+        <main className="relative flex-1 bg-brand-lightgray px-8 sm:px-12 py-3 sm:py-4 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 items-center">
           {/* visual */}
           <div className="relative animate-scale-in">
             <div className="absolute -inset-2 border-2 border-brand-red/15" />
@@ -85,21 +85,21 @@ const Index = () => {
           </div>
 
           {/* benefits */}
-          <ul className="flex flex-col gap-3 sm:gap-4">
+          <ul className="flex flex-col gap-2.5 sm:gap-3">
             {benefits.map((b, i) => (
               <li
                 key={b.title}
                 className="flex gap-3 sm:gap-4 animate-fade-in"
                 style={{ animationDelay: `${0.1 + i * 0.12}s`, animationFillMode: 'both' }}
               >
-                <div className="shrink-0 mt-0.5 h-8 w-8 flex items-center justify-center bg-brand-red text-white">
-                  <Icon name={b.icon} size={15} />
+                <div className="shrink-0 mt-0.5 h-9 w-9 flex items-center justify-center bg-brand-red text-white">
+                  <Icon name={b.icon} size={17} />
                 </div>
                 <div>
-                  <h3 className="font-display text-base sm:text-lg font-semibold leading-tight text-brand-gray">
+                  <h3 className="font-display text-lg sm:text-xl font-bold leading-tight text-brand-red">
                     {b.title}
                   </h3>
-                  <p className="text-brand-gray/60 text-[11px] sm:text-xs leading-snug mt-0.5">
+                  <p className="text-brand-gray/75 text-xs sm:text-sm leading-snug mt-0.5">
                     {b.text}
                   </p>
                 </div>
@@ -112,30 +112,30 @@ const Index = () => {
         <section className="relative bg-brand-red text-white px-8 sm:px-12 py-3 sm:py-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div>
-              <p className="font-display text-lg sm:text-xl font-bold leading-tight">
+              <p className="font-display text-xl sm:text-2xl font-bold leading-tight">
                 Свяжитесь с менеджером
               </p>
-              <p className="text-white/70 text-[10px] sm:text-xs">
+              <p className="text-white/80 text-xs">
                 для подбора комплекта под ваше заведение
               </p>
             </div>
-            <div className="space-y-0.5 text-xs sm:text-sm font-medium">
+            <div className="space-y-1 text-sm sm:text-base font-bold">
               <a href="tel:+79061715498" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
-                <Icon name="Phone" size={12} /> +7 (906) 171-54-98
+                <Icon name="Phone" size={14} /> +7 (906) 171-54-98
               </a>
               <a href="mailto:volgoglass@mail.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
-                <Icon name="Mail" size={12} /> volgoglass@mail.ru
+                <Icon name="Mail" size={14} /> volgoglass@mail.ru
               </a>
               <a href="https://complexbar.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
-                <Icon name="Globe" size={12} /> complexbar.ru
+                <Icon name="Globe" size={14} /> complexbar.ru
               </a>
             </div>
           </div>
         </section>
 
         {/* ===== FOOTER ===== */}
-        <footer className="relative bg-white px-8 sm:px-12 py-2.5 text-center border-t border-brand-red/10">
-          <p className="text-xs sm:text-sm text-brand-gray/60 leading-snug">
+        <footer className="relative bg-white px-8 sm:px-12 py-2 text-center border-t border-brand-red/10">
+          <p className="text-xs sm:text-sm text-brand-gray/70 leading-snug">
             *Список стаканов для подарка запрашивайте у менеджера. Количество подарков ограничено.
           </p>
         </footer>
