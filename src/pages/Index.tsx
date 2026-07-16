@@ -44,13 +44,7 @@ const Index = () => {
         {/* ===== HEADER: white bg ===== */}
         <header className="relative bg-white px-8 sm:px-12 pt-7 sm:pt-8 pb-6 sm:pb-7">
           {/* logo + city */}
-          <div className="flex items-center justify-between gap-4 mb-5 animate-fade-in">
-            <div className="flex items-center gap-3">
-              <div className="h-px w-8 bg-brand-red" />
-              <span className="text-brand-red tracking-[0.3em] text-[10px] sm:text-xs uppercase font-bold">
-                Волгоград
-              </span>
-            </div>
+          <div className="flex items-center justify-end gap-4 mb-5 animate-fade-in">
             <div className="shrink-0 rounded-full bg-white shadow-md ring-2 ring-brand-red/20 p-0.5">
               <img
                 src={LOGO_IMAGE}
