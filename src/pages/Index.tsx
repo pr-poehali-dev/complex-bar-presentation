@@ -72,19 +72,20 @@ const Index = () => {
         <div className="h-px bg-brand-red/20 mx-8 sm:mx-12" />
 
         {/* ===== BODY: 2 columns ===== */}
-        <main className="relative flex-1 bg-brand-lightgray px-8 sm:px-12 py-3 sm:py-4 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 items-center">
+        <main className="relative flex-1 bg-brand-lightgray px-8 sm:px-12 py-3 sm:py-4 grid grid-cols-1 sm:grid-cols-[3fr_2fr] gap-4 sm:gap-6 items-center">
           {/* visual */}
-          <div className="relative animate-scale-in">
+          <div className="relative animate-scale-in overflow-hidden">
             <div className="absolute -inset-2 border-2 border-brand-red/15" />
             <img
               src={DISH_IMAGE}
               alt="Премиальный рельефный сервиз"
               className="relative w-full h-full object-cover aspect-[3/4]"
             />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent pt-12 pb-4 px-3 text-center">
-              <p className="font-display font-black uppercase leading-[0.95] text-white text-3xl sm:text-4xl tracking-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
-                Дарим<br />
-                <span className="text-brand-yellow">стаканы!</span>
+            <div className="absolute inset-0 bg-black/25 flex items-center justify-center">
+              <p className="font-display font-black uppercase text-center leading-[0.9] text-white text-2xl sm:text-3xl tracking-tight drop-shadow-[0_3px_8px_rgba(0,0,0,0.95)] -rotate-[28deg] w-[130%]">
+                Стаканы<br />
+                для воды<br />
+                <span className="text-brand-yellow">бесплатно!</span>
               </p>
             </div>
           </div>
