@@ -82,10 +82,10 @@ const Index = () => {
               className="relative w-full h-full object-cover aspect-[3/4]"
             />
             <div className="absolute inset-0 bg-black/25 flex items-center justify-center">
-              <p className="font-display font-black uppercase text-center leading-[0.9] text-white text-2xl sm:text-3xl tracking-tight drop-shadow-[0_3px_8px_rgba(0,0,0,0.95)] -rotate-[28deg] w-[130%]">
+              <p className="font-display font-black uppercase text-center leading-[0.9] text-white text-4xl sm:text-5xl tracking-tight drop-shadow-[0_3px_8px_rgba(0,0,0,0.95)] -rotate-[28deg] w-[150%]">
                 Стаканы<br />
                 для воды<br />
-                <span className="text-brand-yellow text-4xl sm:text-5xl block mt-1">бесплатно!</span>
+                <span className="text-brand-yellow text-6xl sm:text-7xl block mt-1">бесплатно!</span>
               </p>
             </div>
           </div>
