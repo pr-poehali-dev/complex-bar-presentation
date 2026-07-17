@@ -85,7 +85,7 @@ const Index = () => {
               <p className="font-display font-black uppercase text-center leading-[0.9] text-white text-2xl sm:text-3xl tracking-tight drop-shadow-[0_3px_8px_rgba(0,0,0,0.95)] -rotate-[28deg] w-[130%]">
                 Стаканы<br />
                 для воды<br />
-                <span className="text-brand-yellow">бесплатно!</span>
+                <span className="text-brand-yellow text-4xl sm:text-5xl block mt-1">бесплатно!</span>
               </p>
             </div>
           </div>
