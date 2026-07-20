@@ -37,12 +37,12 @@ const FullPhoto = () => {
         </div>
 
         {/* main headline over image */}
-        <div className="absolute inset-x-0 bottom-[30%] z-10 px-8 sm:px-10 animate-fade-in">
-          <h1 className="font-display font-black uppercase leading-[0.95] text-3xl sm:text-4xl tracking-tight drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)]">
+        <div className="absolute inset-x-0 bottom-[38%] z-10 px-8 sm:px-10 animate-fade-in">
+          <h1 className="font-display font-black uppercase leading-[0.95] text-5xl sm:text-6xl tracking-tight drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] -rotate-[8deg] origin-left">
             Стаканы для воды<br />
-            <span className="text-brand-yellow text-4xl sm:text-5xl">бесплатно!</span>
+            <span className="text-brand-yellow text-6xl sm:text-7xl">бесплатно!</span>
           </h1>
-          <p className="mt-2 text-sm sm:text-base text-white/90 max-w-[80%] drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
+          <p className="mt-4 text-sm sm:text-base text-white/90 max-w-[80%] drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
             При покупке фарфора, столовых приборов и кухонного инвентаря
             <span className="align-super text-brand-yellow text-xs">*</span>
           </p>
