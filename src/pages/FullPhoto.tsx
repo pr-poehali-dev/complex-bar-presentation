@@ -31,7 +31,7 @@ const FullPhoto = () => {
               src={LOGO_IMAGE}
               alt="Логотип Комплекс-бар"
               className="object-contain rounded-full"
-              style={{ width: '84px', height: '84px' }}
+              style={{ width: '189px', height: '189px' }}
             />
           </div>
         </div>
