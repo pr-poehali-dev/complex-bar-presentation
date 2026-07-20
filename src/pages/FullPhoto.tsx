@@ -65,15 +65,15 @@ const FullPhoto = () => {
             Стаканы для воды<br />
             <span className="text-brand-yellow text-6xl sm:text-7xl">бесплатно!</span>
           </h1>
-          <p className="mt-4 text-sm sm:text-base text-white/90 max-w-[80%] drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
-            При покупке фарфора, столовых приборов и кухонного инвентаря
-            <span className="align-super text-brand-yellow text-xs">*</span>
-          </p>
         </div>
 
         {/* conditions + CTA block */}
         <div className="absolute inset-x-0 bottom-0 z-10 px-8 sm:px-10 pb-4 sm:pb-5">
           {/* conditions */}
+          <p className="text-base sm:text-lg font-semibold text-white mb-3 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
+            При покупке фарфора, столовых приборов и кухонного инвентаря
+            <span className="align-super text-brand-yellow text-xs">*</span>
+          </p>
           <ul className="grid grid-cols-2 gap-x-6 gap-y-4 mb-5">
             {conditions.map((c) => (
               <li key={c.title} className="flex items-start gap-3">
