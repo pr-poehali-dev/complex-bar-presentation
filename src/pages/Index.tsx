@@ -129,8 +129,8 @@ const Index = () => {
               <a href="tel:+79061715498" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
                 <Icon name="Phone" size={14} /> +7 (906) 171-54-98
               </a>
-              <a href="mailto:volgoglass@mail.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
-                <Icon name="Mail" size={14} /> volgoglass@mail.ru
+              <a href="mailto:volgograd@complexbar.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
+                <Icon name="Mail" size={14} /> volgograd@complexbar.ru
               </a>
               <a href="https://complexbar.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
                 <Icon name="Globe" size={14} /> complexbar.ru
