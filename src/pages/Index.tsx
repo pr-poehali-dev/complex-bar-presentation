@@ -56,7 +56,10 @@ const Index = () => {
           </div>
 
           {/* yellow accent badge */}
-          <div className="inline-flex items-center gap-2.5 bg-brand-yellow px-5 py-2 mb-2">
+          <div
+            className="inline-flex items-center justify-center gap-2.5 bg-brand-yellow mb-2"
+            style={{ width: '5cm', height: '2cm' }}
+          >
             <Icon name="Tag" size={22} className="text-brand-gray" />
             <span className="text-brand-gray text-lg sm:text-xl font-bold uppercase tracking-widest">Акция</span>
           </div>
