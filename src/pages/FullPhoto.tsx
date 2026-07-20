@@ -72,7 +72,6 @@ const FullPhoto = () => {
           {/* conditions */}
           <p className="text-base sm:text-lg font-semibold text-white mb-3 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
             При покупке фарфора, столовых приборов и кухонного инвентаря
-            <span className="align-super text-brand-yellow text-xs">*</span>
           </p>
           <ul className="grid grid-cols-2 gap-x-6 gap-y-4 mb-5">
             {conditions.map((c) => (
