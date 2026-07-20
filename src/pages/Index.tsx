@@ -62,8 +62,8 @@ const Index = () => {
           </div>
 
           <h1 className="font-display font-extrabold leading-[1.15] text-xl sm:text-2xl tracking-tight text-brand-gray">
-            Уникальное предложение. Наша компания предлагает <span className="text-brand-red">акцию на покупку
-            высококачественного фарфора, столовых приборов и кухонного инвентаря</span>
+            Уникальное предложение. Наша компания предлагает <span className="text-brand-red">акцию
+            при открытии вашего нового проекта</span>
             <span className="align-super text-brand-red text-sm">*</span>
           </h1>
         </header>

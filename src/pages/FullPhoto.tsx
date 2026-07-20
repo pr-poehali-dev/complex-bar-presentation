@@ -71,7 +71,7 @@ const FullPhoto = () => {
         <div className="absolute inset-x-0 bottom-0 z-10 px-8 sm:px-10 pb-4 sm:pb-5">
           {/* conditions */}
           <p className="text-base sm:text-lg font-semibold text-white mb-3 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
-            При покупке фарфора, столовых приборов и кухонного инвентаря
+            При открытии вашего нового проекта
           </p>
           <ul className="grid grid-cols-2 gap-x-6 gap-y-4 mb-5">
             {conditions.map((c) => (
