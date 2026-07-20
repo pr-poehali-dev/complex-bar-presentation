@@ -140,6 +140,9 @@ const FullPhoto = () => {
               </a>
             </div>
           </div>
+          <p className="text-center text-white/60 text-[10px] sm:text-xs mt-2">
+            Акция действует до конца года
+          </p>
         </div>
       </div>
     </div>
