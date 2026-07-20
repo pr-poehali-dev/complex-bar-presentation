@@ -1,4 +1,7 @@
+import { useRef, useState } from 'react';
+import html2canvas from 'html2canvas';
 import Icon from '@/components/ui/icon';
+import { Button } from '@/components/ui/button';
 import SERVING_IMAGE from '@/assets/serving-table.jpg';
 
 const LOGO_IMAGE =
@@ -28,10 +31,35 @@ const conditions = [
 ];
 
 const FullPhoto = () => {
+  const slideRef = useRef<HTMLDivElement>(null);
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = async () => {
+    if (!slideRef.current) return;
+    setDownloading(true);
+    try {
+      const canvas = await html2canvas(slideRef.current, {
+        useCORS: true,
+        scale: 3,
+        backgroundColor: '#ffffff',
+      });
+      const link = document.createElement('a');
+      link.download = 'akciya-stakany-besplatno.jpg';
+      link.href = canvas.toDataURL('image/jpeg', 0.95);
+      link.click();
+    } finally {
+      setDownloading(false);
+    }
+  };
+
   return (
-    <div className="min-h-screen w-full bg-neutral-300 flex items-center justify-center p-4 sm:p-8 font-sans">
+    <div className="min-h-screen w-full bg-neutral-300 flex flex-col items-center justify-center gap-4 p-4 sm:p-8 font-sans">
+      <Button onClick={handleDownload} disabled={downloading} className="gap-2 print:hidden">
+        <Icon name={downloading ? 'Loader2' : 'Download'} size={18} className={downloading ? 'animate-spin' : ''} />
+        {downloading ? 'Готовим файл...' : 'Скачать в JPG'}
+      </Button>
       {/* A4 slide, photo edge-to-edge */}
-      <div className="relative w-full max-w-[794px] aspect-[210/297] bg-white text-white overflow-hidden shadow-2xl">
+      <div ref={slideRef} className="relative w-full max-w-[794px] aspect-[210/297] bg-white text-white overflow-hidden shadow-2xl">
         <img
           src={SERVING_IMAGE}
           alt="Сервировка стола"
