@@ -60,7 +60,7 @@ const FullPhoto = () => {
         </div>
 
         {/* main headline over image */}
-        <div className="absolute inset-x-0 bottom-[52%] z-10 px-8 sm:px-10 animate-fade-in">
+        <div className="absolute inset-x-0 bottom-[58%] z-10 px-8 sm:px-10 animate-fade-in">
           <h1 className="font-display font-black uppercase leading-[0.95] text-5xl sm:text-6xl tracking-tight drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] -rotate-[8deg] origin-left">
             Стаканы для воды<br />
             <span className="text-brand-yellow text-6xl sm:text-7xl">бесплатно!</span>
@@ -74,17 +74,17 @@ const FullPhoto = () => {
         {/* conditions + CTA block */}
         <div className="absolute inset-x-0 bottom-0 z-10 px-8 sm:px-10 pb-4 sm:pb-5">
           {/* conditions */}
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-2 mb-3">
+          <ul className="grid grid-cols-2 gap-x-5 gap-y-3 mb-4">
             {conditions.map((c) => (
-              <li key={c.title} className="flex items-start gap-2">
-                <div className="shrink-0 mt-0.5 h-6 w-6 flex items-center justify-center bg-brand-yellow text-brand-gray">
-                  <Icon name={c.icon} size={13} />
+              <li key={c.title} className="flex items-start gap-3">
+                <div className="shrink-0 mt-0.5 h-9 w-9 flex items-center justify-center bg-brand-yellow text-brand-gray">
+                  <Icon name={c.icon} size={19} />
                 </div>
                 <div>
-                  <p className="text-[11px] sm:text-xs font-bold leading-tight text-brand-yellow">
+                  <p className="text-sm sm:text-base font-bold leading-tight text-brand-yellow">
                     {c.title}
                   </p>
-                  <p className="text-[10px] sm:text-[11px] text-white/85 leading-snug">
+                  <p className="text-xs sm:text-sm text-white/85 leading-snug">
                     {c.text}
                   </p>
                 </div>
