@@ -1,0 +1,80 @@
+import Icon from '@/components/ui/icon';
+import SERVING_IMAGE from '@/assets/serving-table.jpg';
+
+const LOGO_IMAGE =
+  'https://cdn.poehali.dev/projects/cff7e38b-d3d7-405f-8dee-c5199949622d/bucket/187e8c8a-5e8a-45b9-8539-3ed94d3a7dd8.png';
+
+const FullPhoto = () => {
+  return (
+    <div className="min-h-screen w-full bg-neutral-300 flex items-center justify-center p-4 sm:p-8 font-sans">
+      {/* A4 slide, photo edge-to-edge */}
+      <div className="relative w-full max-w-[794px] aspect-[210/297] bg-white text-white overflow-hidden shadow-2xl">
+        <img
+          src={SERVING_IMAGE}
+          alt="Сервировка стола"
+          className="absolute inset-0 w-full h-full object-cover animate-scale-in"
+        />
+
+        {/* top gradient for logo/badge readability */}
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/60 to-transparent" />
+        {/* bottom gradient for text/cta readability */}
+        <div className="absolute inset-x-0 bottom-0 h-[46%] bg-gradient-to-t from-black/85 via-black/50 to-transparent" />
+
+        {/* header row */}
+        <div className="relative z-10 flex items-center justify-between px-8 sm:px-10 pt-6 sm:pt-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 bg-brand-yellow px-3 py-1.5">
+            <Icon name="Tag" size={14} className="text-brand-gray" />
+            <span className="text-brand-gray text-xs font-bold uppercase tracking-widest">Акция</span>
+          </div>
+          <div className="shrink-0 rounded-full bg-white shadow-md ring-2 ring-brand-red/30 p-0.5">
+            <img
+              src={LOGO_IMAGE}
+              alt="Логотип Комплекс-бар"
+              className="object-contain rounded-full"
+              style={{ width: '84px', height: '84px' }}
+            />
+          </div>
+        </div>
+
+        {/* main headline over image */}
+        <div className="absolute inset-x-0 bottom-[30%] z-10 px-8 sm:px-10 animate-fade-in">
+          <h1 className="font-display font-black uppercase leading-[0.95] text-3xl sm:text-4xl tracking-tight drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)]">
+            Стаканы для воды<br />
+            <span className="text-brand-yellow text-4xl sm:text-5xl">бесплатно!</span>
+          </h1>
+          <p className="mt-2 text-sm sm:text-base text-white/90 max-w-[80%] drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
+            При покупке фарфора, столовых приборов и кухонного инвентаря
+            <span className="align-super text-brand-yellow text-xs">*</span>
+          </p>
+        </div>
+
+        {/* CTA block */}
+        <div className="absolute inset-x-0 bottom-0 z-10 px-8 sm:px-10 pb-4 sm:pb-5">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 border-t border-white/20 pt-3">
+            <div>
+              <p className="font-display text-lg sm:text-xl font-bold leading-tight">
+                Свяжитесь с менеджером
+              </p>
+              <p className="text-white/70 text-[11px] sm:text-xs">
+                *Список стаканов запрашивайте у менеджера. Количество ограничено.
+              </p>
+            </div>
+            <div className="space-y-0.5 text-xs sm:text-sm font-bold">
+              <a href="tel:+79061715498" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
+                <Icon name="Phone" size={13} /> +7 (906) 171-54-98
+              </a>
+              <a href="mailto:volgoglass@mail.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
+                <Icon name="Mail" size={13} /> volgoglass@mail.ru
+              </a>
+              <a href="https://complexbar.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
+                <Icon name="Globe" size={13} /> complexbar.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FullPhoto;
