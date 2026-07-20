@@ -60,8 +60,8 @@ const FullPhoto = () => {
         </div>
 
         {/* main headline over image */}
-        <div className="absolute inset-x-0 bottom-[44%] z-10 px-8 sm:px-10 animate-fade-in">
-          <h1 className="font-display font-black uppercase leading-[0.95] text-6xl sm:text-7xl tracking-tight text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] -rotate-[16deg] origin-left">
+        <div className="absolute inset-x-0 bottom-[44%] z-10 px-8 sm:px-10 animate-fade-in text-center">
+          <h1 className="inline-block font-display font-black uppercase leading-[0.95] text-6xl sm:text-7xl tracking-tight text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] -rotate-[16deg] origin-center">
             Стаканы для воды<br />
             <span className="text-[#FFE066] text-7xl sm:text-8xl drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)]">бесплатно!</span>
           </h1>
