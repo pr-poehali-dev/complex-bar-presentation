@@ -45,9 +45,12 @@ const FullPhoto = () => {
 
         {/* header row */}
         <div className="relative z-10 flex items-center justify-between px-8 sm:px-10 pt-6 sm:pt-8 animate-fade-in">
-          <div className="inline-flex items-center gap-3 bg-brand-yellow px-5 py-2.5">
-            <Icon name="Tag" size={22} className="text-brand-gray" />
-            <span className="text-brand-gray text-base font-bold uppercase tracking-widest">Акция</span>
+          <div
+            className="inline-flex items-center justify-center gap-3 bg-brand-yellow"
+            style={{ width: '7cm', height: '2.8cm' }}
+          >
+            <Icon name="Tag" size={28} className="text-brand-gray" />
+            <span className="text-brand-gray text-2xl sm:text-3xl font-bold uppercase tracking-widest">Акция</span>
           </div>
           <div className="shrink-0 rounded-full bg-white shadow-md ring-2 ring-brand-red/30 p-0.5">
             <img
