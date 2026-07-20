@@ -56,9 +56,9 @@ const Index = () => {
           </div>
 
           {/* yellow accent badge */}
-          <div className="inline-flex items-center gap-2 bg-brand-yellow px-3 py-1 mb-2">
-            <Icon name="Tag" size={14} className="text-brand-gray" />
-            <span className="text-brand-gray text-xs font-bold uppercase tracking-widest">Акция</span>
+          <div className="inline-flex items-center gap-2.5 bg-brand-yellow px-5 py-2 mb-2">
+            <Icon name="Tag" size={22} className="text-brand-gray" />
+            <span className="text-brand-gray text-lg sm:text-xl font-bold uppercase tracking-widest">Акция</span>
           </div>
 
           <h1 className="font-display font-extrabold leading-[1.15] text-xl sm:text-2xl tracking-tight text-brand-gray">
