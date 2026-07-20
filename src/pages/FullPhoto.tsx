@@ -140,7 +140,7 @@ const FullPhoto = () => {
               </a>
             </div>
           </div>
-          <p className="text-center text-white/60 text-[10px] sm:text-xs mt-2">
+          <p className="text-center text-white/80 text-sm sm:text-base font-semibold border-t border-white/20 mt-2 pt-2">
             Акция действует до конца года
           </p>
         </div>
