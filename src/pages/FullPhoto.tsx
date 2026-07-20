@@ -92,8 +92,8 @@ const FullPhoto = () => {
           </ul>
 
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 border-t border-white/20 pt-3">
-            <div>
-              <p className="font-display text-lg sm:text-xl font-bold leading-tight">
+            <div className="text-center sm:text-left w-full sm:w-auto">
+              <p className="font-display text-2xl sm:text-3xl font-bold leading-tight">
                 Свяжитесь с менеджером
               </p>
             </div>

@@ -120,8 +120,8 @@ const Index = () => {
         {/* ===== CTA: red bg ===== */}
         <section className="relative bg-brand-red text-white px-8 sm:px-12 py-3 sm:py-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-            <div>
-              <p className="font-display text-xl sm:text-2xl font-bold leading-tight">
+            <div className="text-center sm:text-left w-full sm:w-auto">
+              <p className="font-display text-3xl sm:text-4xl font-bold leading-tight">
                 Свяжитесь с менеджером
               </p>
               <p className="text-white/80 text-xs">
