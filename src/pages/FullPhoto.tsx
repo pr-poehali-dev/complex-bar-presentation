@@ -55,9 +55,6 @@ const FullPhoto = () => {
               <p className="font-display text-lg sm:text-xl font-bold leading-tight">
                 Свяжитесь с менеджером
               </p>
-              <p className="text-white/70 text-[11px] sm:text-xs">
-                *Список стаканов запрашивайте у менеджера. Количество ограничено.
-              </p>
             </div>
             <div className="space-y-0.5 text-xs sm:text-sm font-bold">
               <a href="tel:+79061715498" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
