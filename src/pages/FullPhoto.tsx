@@ -141,10 +141,11 @@ const FullPhoto = () => {
               </div>
             </div>
           </div>
-          <p className="text-center text-white/80 text-sm sm:text-base font-semibold border-t border-white/20 mt-2 pt-2">
-            Акция действует до 31.12.2026 г.
-          </p>
         </div>
+
+        <p className="absolute bottom-3 left-4 z-20 text-white/80 text-xs sm:text-sm font-semibold">
+          Акция действует до 31.12.2026 г.
+        </p>
 
         <a
           href="https://complexbar.ru"
