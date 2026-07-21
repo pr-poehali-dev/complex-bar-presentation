@@ -99,7 +99,7 @@ const FullPhoto = () => {
         </div>
 
         {/* conditions + CTA block */}
-        <div className="absolute inset-x-0 bottom-0 z-10 px-8 sm:px-10 pb-4 sm:pb-5">
+        <div className="absolute inset-x-0 bottom-0 z-10 px-8 sm:px-10 pb-8 sm:pb-10">
           {/* conditions */}
           <p className="text-lg sm:text-xl font-semibold text-white mb-3 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
             При открытии вашего нового проекта
