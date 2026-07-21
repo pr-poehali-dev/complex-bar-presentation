@@ -122,28 +122,36 @@ const FullPhoto = () => {
             ))}
           </ul>
 
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 border-t border-white/20 pt-3">
-            <div className="text-center sm:text-left w-full sm:w-auto">
-              <p className="font-display text-2xl sm:text-3xl font-bold leading-tight">
-                Свяжитесь с менеджером
-              </p>
-            </div>
-            <div className="space-y-0.5 text-xs sm:text-sm font-bold">
-              <a href="tel:+79061715498" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
-                <Icon name="Phone" size={13} /> +7 (906) 171-54-98
-              </a>
-              <a href="mailto:volgograd@complexbar.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
-                <Icon name="Mail" size={13} /> volgograd@complexbar.ru
-              </a>
-              <a href="https://complexbar.ru" className="flex items-center gap-2 hover:text-brand-yellow transition-colors">
-                <Icon name="Globe" size={13} /> complexbar.ru
-              </a>
+          <div className="border-t border-white/20 pt-3">
+            <p className="font-display text-2xl sm:text-3xl font-bold leading-tight mb-2">
+              Свяжитесь с нашими менеджерами:
+            </p>
+            <div className="grid grid-cols-3 gap-x-4 text-xs sm:text-sm font-bold">
+              <div>
+                <p className="text-brand-yellow">г. Астрахань</p>
+                <p>тел.: +7 (851) 246-46-11</p>
+              </div>
+              <div>
+                <p className="text-brand-yellow">г. Саратов</p>
+                <p>тел.: +7 (845) 224-54-94</p>
+              </div>
+              <div>
+                <p className="text-brand-yellow">г. Волгоград</p>
+                <p>тел.: +7 (844) 226-76-53</p>
+              </div>
             </div>
           </div>
           <p className="text-center text-white/80 text-sm sm:text-base font-semibold border-t border-white/20 mt-2 pt-2">
             Акция действует до 31.12.2026 г.
           </p>
         </div>
+
+        <a
+          href="https://complexbar.ru"
+          className="absolute bottom-3 right-4 z-20 flex items-center gap-1.5 text-white/80 hover:text-brand-yellow transition-colors text-xs sm:text-sm font-bold"
+        >
+          <Icon name="Globe" size={13} /> complexbar.ru
+        </a>
       </div>
     </div>
   );
